@@ -16,6 +16,7 @@ Generate configuration files and data
 
 > # emerge --config =dev-db/postgresql-server-9.3.2
 
+
 Move configuration files to /etc/postgresql-9.3/ directory
 
 > # mkdir /etc/postgresql-9.3
@@ -23,10 +24,12 @@ Move configuration files to /etc/postgresql-9.3/ directory
 > # chown postgres:postres -R /etc/postgresql-9.3/
 > # chmod 0700 -R /etc/postgresql-9.3/
 
+
 Start server
 ------------
 
 > # /etc/init.d/postgresql-9.3 start
+
 
 Connect server to set password for *postgres* user
 
@@ -40,6 +43,7 @@ Connect server to set password for *postgres* user
 > postgres=# \q
 > #
 
+
 We configure to use password when connect to server by editting /etc/postgresql-9.3/pg_hba.conf
 
 > # TYPE  DATABASE        USER            ADDRESS                 METHOD
@@ -47,9 +51,11 @@ We configure to use password when connect to server by editting /etc/postgresql-
 > host    all             all             127.0.0.1/32            password
 > host    all             all             ::1/128                 password
 
+
 Let's reload configuration
 
 > # /etc/init.d/postgresql-9.3 reload
+
 
 Now you can connect with server by username and password.
 
