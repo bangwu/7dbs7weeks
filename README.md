@@ -1,4 +1,5 @@
-7dbs7weeks
-==========
+Seven Databases In Seven Weeks
+==============================
 
-seven databases seven weeks
+Homework for [Seven databases in seven weeks](http://pragprog.com/book/rwdata/seven-databases-in-seven-weeks) book.
+Source code can be found [here](http://pragprog.com/titles/rwdata/source_code).
