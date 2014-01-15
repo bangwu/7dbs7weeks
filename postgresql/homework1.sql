@@ -10,4 +10,4 @@ JOIN events e ON v.venue_id = e.event_id
 WHERE e.title = 'LARP Club';
 
 /* Alter the venues table to contain a boolean column called active, with the default value of TRUE */
-ALTER TABLE events ADD active boolean DEFAULT TRUE;
+ALTER TABLE venues ADD active boolean DEFAULT TRUE;
