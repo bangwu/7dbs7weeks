@@ -66,7 +66,15 @@ Let's reload configuration
 	# /etc/init.d/postgresql-9.3 reload
 	'''
 
-Now you can connect with server by username and password.
+Before we connect with server by username and password, we have to install extensions: tablefunc, dict_xsyn, fuzzystrmatch, pg_trgm, cube. For example with tablefunc extension:
+
+	# cd /usr/share/postgresql-9.3/extension
+	# pqsl -U postgres
+
+Connect with sevendbs and create tablefunc extension
+
+	\c sevendbs
+	CREATE EXTENSION tablefunc;
 
 
 
