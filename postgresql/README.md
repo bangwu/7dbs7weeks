@@ -55,7 +55,8 @@ Let's reload configuration
 Before we connect with server by username and password, we have to install extensions: tablefunc, dict_xsyn, fuzzystrmatch, pg_trgm, cube. For example with tablefunc extension:
 
 	# cd /usr/share/postgresql-9.3/extension
-	# pqsl -U postgres
+	# psql -U postgres -d sevendbs -f tablefunc--1.0.sql
+	# psql -U postgres
 	postgres=# \c sevendbs
 	postgres=# CREATE EXTENSION tablefunc;
 
